@@ -8,7 +8,7 @@ import shutil
 import sys
 
 api_version = "v0a769"
-api = f"https://api.google.com/{api_version}"
+api = f"https://api.cloudflare.com/{api_version}"
 reg_url = f"{api}/reg"
 status_url = f"{api}/client_config"
 terms_of_service_url = "https://www.cloudflare.com/application/terms/"

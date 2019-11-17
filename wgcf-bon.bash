@@ -1,6 +1,6 @@
 #!/bin/bash
 # CloudFlare WARP Client Config generator for WireGuard
-# Script by Bon-chan
+# Script by Benny CTTO
 clear
 
 if [ "$(uname -o)" != 'Android' ]; then
@@ -22,10 +22,10 @@ pip install requests
 cd storage/shared
 rm -rf WireGuard && mkdir -p WireGuard
 cd WireGuard
-curl -4sO 'https://raw.githubusercontent.com/Bonveio/cloudflare-warp-wgclient-bash/master/wgcf.py'
+curl -4sO 'https://raw.githubusercontent.com/benedick-benny/benny/master/wgcf.py'
 python wgcf.py
 cp wgcf-profile.conf ImportThis.conf
 clear
-echo -e "\n\nYour Cloudflare WARP client is Successfully Configured\nYour config is located at /storage/emulated/0/WireGuard/ImportThis.conf\nNow Open your WireGuard App then click the plus sign and then tap/click the 'Create from file or Archive'\nThen locate the WireGuard folder on your phone internal storage and click or tap the ImportThis.conf file\nAnd lastly tap/click the switch to run the VPN\n\n Enjoy Surfing!"
+echo -e "\n\nYour Cloudflare WARP client is Successfully Configured Benny Benny\nYour config is located at /storage/emulated/0/WireGuard/ImportThis.conf\nNow Open your WireGuard App then click the plus sign and then tap/click the 'Create from file or Archive'\nThen locate the WireGuard folder on your phone internal storage and click or tap the ImportThis.conf file\nAnd lastly tap/click the switch to run the VPN\n\n Enjoy Surfing!"
 cd
 exit 1

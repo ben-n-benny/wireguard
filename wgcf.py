@@ -21,7 +21,7 @@ default_headers = {"Accept-Encoding": "gzip",
                    "User-Agent": "okhttp/3.12.1"}
 
 # toggle to allow sniffing traffic
-debug = False
+debug = True
 
 
 def get_verify() -> bool:
